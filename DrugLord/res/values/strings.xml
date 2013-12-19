@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Drug Lord</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    
+    <string name="places">Places</string>
+    <string name="info">Info</string>
+    <string name="flyaway">Fly Away</string>
+    
+    <string-array name="places">
+        <item>Finances</item>
+        <item>Shopping</item>
+        <item>Hospital</item>
+        <item>Vault</item>
+        <item>Shipping</item>
+    </string-array>
+    
+    <string-array name="info">
+        <item>Vaults</item>
+        <item>World Drug Prices</item>
+        <item>World Cities</item>
+        <item>Shipment Status</item>
+        <item>History</item>
+    </string-array>
+    
+    <string-array name="flyaway">
+        <item>Beijing, China</item>
+        <item>Boston, USA</item>
+        <item>Detroit, USA</item>
+        <item>London, England</item>
+        <item>Los Angeles, USA</item>
+        <item>Miami, USA</item>
+        <item>Moscow, Russia</item>
+        <item>New York, USA</item>
+        <item>Paris, France</item>
+        <item>San Francisco, USA</item>
+        <item>St Petersburg, Russia</item>
+        <item>Sydney, Australia</item>
+        <item>Toronto, Canada</item>
+        <item>Vancouver, Canada</item>
+    </string-array>
+
+</resources>

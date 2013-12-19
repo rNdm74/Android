@@ -1,0 +1,516 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".Main" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.5"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="15sp" >
+
+        <TextView
+            android:id="@+id/tInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Information"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#252525" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/tInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15sp"
+                android:layout_marginTop="15sp"
+                android:text="Here&apos;s the situation:\nAfter one failed job after another, you decide to embark on a different life: drug dealer! You scrape together your last $1000, but feel it really isn&apos;t enough to get started. The good news is that Buddles spots you an extra $1000. The bad news is that he is a loan shark and will soon want his money back. Time to get started!
+                "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#252525" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:background="#AAAAAA"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="15sp" >
+
+            <TextView
+                android:id="@+id/tMarket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15sp"
+                android:text="The Market"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#252525" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:weightSum="3" >
+
+                <TextView
+                    android:id="@+id/tMarketName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15sp"
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#252525" />
+
+                <TextView
+                    android:id="@+id/tMarketQty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15sp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Qty"
+                    android:textAlignment="gravity"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#252525" />
+
+                <TextView
+                    android:id="@+id/tMarketPrice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15sp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Price"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#252525" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lMarket"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice" >
+            </ListView>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#FFFFFF" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="466dp"
+                android:orientation="vertical"
+                android:padding="15sp" >
+
+                <TextView
+                    android:id="@+id/tAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15sp"
+                    android:text="Action"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#252525" />
+
+                <Button
+                    android:id="@+id/bBuy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Buy" />
+
+                <Button
+                    android:id="@+id/bSell"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sell" />
+
+                <Button
+                    android:id="@+id/bDump"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Dump" />
+
+                <Button
+                    android:id="@+id/bPlaces"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Places" />
+
+                <Button
+                    android:id="@+id/bInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Info" />
+
+                <TextView
+                    android:id="@+id/tTomorrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15sp"
+                    android:text="Tomorrow"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#252525" />
+
+                <Button
+                    android:id="@+id/bStayHere"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Stay Here" />
+
+                <Button
+                    android:id="@+id/bFlyAway"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="FlyAway" />
+
+                <TextView
+                    android:id="@+id/tGame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15sp"
+                    android:text="Game"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#252525" />
+
+                <CheckBox
+                    android:id="@+id/cSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sound"
+                    android:textColor="#252525" />
+
+                <Button
+                    android:id="@+id/bAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="About" />
+
+                <Button
+                    android:id="@+id/bDocs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Docs" />
+
+                <Button
+                    android:id="@+id/bHighScores"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="High Scores" />
+
+                <Button
+                    android:id="@+id/bNewGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="New Game" />
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:padding="15sp" >
+
+                <TextView
+                    android:id="@+id/tInventory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15sp"
+                    android:text="Inventory"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#252525" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15sp"
+                    android:paddingRight="15sp"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/tInventoryName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15sp"
+                        android:layout_weight="1"
+                        android:text="Name"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#252525" />
+
+                    <TextView
+                        android:id="@+id/tInventoryQty"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15sp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Qty"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#252525" />
+
+                    <TextView
+                        android:id="@+id/tInventoryPrice"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15sp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Price"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#252525" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lInventory"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice" >
+                </ListView>
+            </LinearLayout>
+
+            <SlidingDrawer
+                android:id="@+id/slidingDrawer1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15sp"
+                android:content="@+id/content"
+                android:handle="@+id/handle" >
+
+                <TextView
+                    android:id="@+id/handle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="left|center_vertical"
+                    android:padding="15sp"
+                    android:text="Status"
+                    android:textAlignment="gravity"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <LinearLayout
+                    android:id="@+id/content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical" >
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="15sp"
+                                android:weightSum="2" >
+
+                                <TextView
+                                    android:id="@+id/tLocation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="Location" />
+
+                                <TextView
+                                    android:id="@+id/tCurrentLocation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="Austin, USA" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="15sp"
+                                android:weightSum="2" >
+
+                                <TextView
+                                    android:id="@+id/tHealth"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.4"
+                                    android:text="Health" />
+
+                                <ProgressBar
+                                    android:id="@+id/pbHealth"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.6"
+                                    android:progressDrawable="@drawable/progress_drawable_red" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="15sp"
+                                android:weightSum="2" >
+
+                                
+                                <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_weight="1" >
+                                    
+                                <TextView
+                                    android:id="@+id/tDay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.3"
+                                    android:text="Day" />
+                                <TextView
+                                    android:id="@+id/tCurrentDay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.7"
+                                    android:gravity="left"
+                                    android:text="0/30" />    
+                                </LinearLayout>
+                                
+                                <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginLeft="15sp"
+                                android:layout_weight="1" >
+                                    
+                                <TextView
+                                    android:id="@+id/tRank"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Rank" />
+                                <TextView
+                                    android:id="@+id/tCurrentRank"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:text="Wannabe" />    
+                                </LinearLayout>
+                                
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="15sp"
+                                android:weightSum="2" >
+
+                                <TextView
+                                    android:id="@+id/tCash"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="Cash" />
+                                <TextView
+                                    android:id="@+id/tCurrentCash"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="1990"
+                                    android:textColor="#04B404" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="15sp"
+                                android:weightSum="2" >
+
+                                <TextView
+                                    android:id="@+id/tBank"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="Bank" />
+                                <TextView
+                                    android:id="@+id/tCurrentBank"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="0"
+                                    android:textColor="#04B404" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="15sp"
+                                android:weightSum="2" >
+
+                                <TextView
+                                    android:id="@+id/tDebt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="Debt" />
+                                <TextView
+                                    android:id="@+id/tCurrentDebt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="1,150" 
+                                    android:textColor="#FE2E2E"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </SlidingDrawer>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
