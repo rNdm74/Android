@@ -79,6 +79,8 @@ public class Buy extends Activity implements OnClickListener {
 		int quantityValue = Integer.parseInt(quantity.getText().toString());
 		int result = qtyValue - quantityValue;
 		// qty.setText(Integer.toString(result));
+		
+		Constants.currentCash += result;
 
 		Constants.updateMarketListBuy(name.getText().toString(), result);
 		Constants.selectMarketItem = null;

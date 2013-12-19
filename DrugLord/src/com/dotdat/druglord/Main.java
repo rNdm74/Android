@@ -26,6 +26,7 @@ public class Main extends Activity implements OnClickListener {
 	private NumberFormat formatter;
 	private String moneyString;
 	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
