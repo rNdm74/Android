@@ -77,6 +77,8 @@ public class Buy extends Activity implements OnClickListener {
 
 		int qtyValue = Integer.parseInt(qty.getText().toString());
 		int quantityValue = Integer.parseInt(quantity.getText().toString());
+		
+		// Checks if you made a profit or loss from the items you bought
 		int result = qtyValue - quantityValue;
 		// qty.setText(Integer.toString(result));
 		
