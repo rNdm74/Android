@@ -78,6 +78,7 @@ public class Buy extends Activity implements OnClickListener {
 		Constants.inventoryMap.put("Price", price.getText().toString());
 		Constants.inventorylist.add(Constants.inventoryMap);
 
+		// Gets the item purchased quantity 
 		int qtyValue = Integer.parseInt(qty.getText().toString());
 		int quantityValue = Integer.parseInt(quantity.getText().toString());
 		
