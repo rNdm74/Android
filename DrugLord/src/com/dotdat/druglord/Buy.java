@@ -1,5 +1,6 @@
 package com.dotdat.druglord;
 
+import java.text.NumberFormat;
 import java.util.HashMap;
 
 import android.app.Activity;
@@ -13,6 +14,8 @@ import android.widget.TextView;
 public class Buy extends Activity implements OnClickListener {
 
 	private EditText quantity;
+	private NumberFormat formatter;
+	private String moneyString;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +85,15 @@ public class Buy extends Activity implements OnClickListener {
 		int result = qtyValue - quantityValue;
 		// qty.setText(Integer.toString(result));
 		
-		Constants.currentCash += result;
+		
+		int purchasePrice = Integer.parseInt(price.getText().toString());
+		Constants.currentCash -= purchasePrice;
+		
+		
+		
+		formatter = NumberFormat.getCurrencyInstance();
+		moneyString = formatter.format(Constants.currentCash);
+		Constants.cash.setText(moneyString);
 
 		Constants.updateMarketListBuy(name.getText().toString(), result);
 		Constants.selectMarketItem = null;
