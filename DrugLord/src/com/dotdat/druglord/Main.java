@@ -31,17 +31,18 @@ public class Main extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+		// Displays activity on device
 		setContentView(R.layout.activity_main);
 
+		// Links the two xml list views to variables in the constants class
 		Constants.marketView = (ListView) findViewById(R.id.lMarket);
 		Constants.inventoryView = (ListView) findViewById(R.id.lInventory);
 
-		
+		// Create a new economy for the market
 		Constants.marketEconomy = new Economy();
 		
 		
-		
-		
+		// Initializes activity components
 		initializeStayHereButton();
 		
 		initializeStatus();
@@ -57,12 +58,16 @@ public class Main extends Activity implements OnClickListener {
 	}
 
 	private void initializeStayHereButton() {
+		// Stay here is when the player does not fly anywhere and a new day begins
 		Button stayHere = (Button) findViewById(R.id.bStayHere);
 		stayHere.setOnClickListener(this);
 	}
 
 	private void initializeStatus() {
 		
+		// The status screen holds all the player information, 
+		// the current city they are located in, players health, the current day and rank,
+		// the current cash the player has, how much they have banked and what debt they owe
 		
 		Constants.location = (TextView) findViewById(R.id.tCurrentLocation);
 		Constants.currentCity = Constants.marketEconomy.getCity(Cities.AUSTIN.ordinal());
