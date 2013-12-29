@@ -37,7 +37,7 @@ public class Main extends Activity implements OnClickListener {
 		// Links the two xml list views to variables in the constants class
 		Constants.marketView = (ListView) findViewById(R.id.lMarket);
 		Constants.inventoryView = (ListView) findViewById(R.id.lInventory);
-
+		
 		// Create a new economy for the market
 		Constants.marketEconomy = new Economy();
 		
@@ -54,6 +54,12 @@ public class Main extends Activity implements OnClickListener {
 		initializeBuyButton();
 
 		initializeSellButton();
+		
+		initializePlacesButton();
+		
+		initializeInfoButton();
+		
+		initializeFlyAwayButton();
 
 	}
 
@@ -103,6 +109,30 @@ public class Main extends Activity implements OnClickListener {
 		Constants.debt.setText(moneyString);
 	}
 
+	private void initializePlacesButton() {
+		Button places = (Button) findViewById(R.id.bPlaces);
+
+		//sell.setText("<< Sell");
+
+		places.setOnClickListener(this);
+	}
+	
+	private void initializeFlyAwayButton() {
+		Button flyAway = (Button) findViewById(R.id.bFlyAway);
+
+		//sell.setText("<< Sell");
+
+		flyAway.setOnClickListener(this);
+	}
+	
+	private void initializeInfoButton() {
+		Button info = (Button) findViewById(R.id.bInfo);
+
+		//sell.setText("<< Sell");
+
+		info.setOnClickListener(this);
+	}
+	
 	private void initializeSellButton() {
 		Button sell = (Button) findViewById(R.id.bSell);
 
@@ -273,6 +303,15 @@ public class Main extends Activity implements OnClickListener {
 				startActivity("com.dotdat.druglord.Sell");
 			}
 			break;
+		case R.id.bPlaces:
+				startActivity("com.dotdat.druglord.Places");
+			break;
+		case R.id.bInfo:
+			startActivity("com.dotdat.druglord.Info");
+		break;
+		case R.id.bFlyAway:
+			startActivity("com.dotdat.druglord.FlyAway");
+		break;
 		case R.id.bStayHere:
 			Constants.day.setText(++Constants.currentDay + "/30");
 			Constants.currentDebt += Constants.currentDebt * 0.5;					

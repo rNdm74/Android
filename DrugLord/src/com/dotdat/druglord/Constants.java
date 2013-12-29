@@ -33,6 +33,14 @@ public final class Constants {
 	
 	
 	//
+	// FLYAWAY
+	//
+	public static ListView flyAwayView;
+	public static ArrayList<String> flyAwayValues;
+	public static ArrayList<HashMap<String, String>> flyAwaylist;
+	public static HashMap<String, String> flyAwayMap;
+	
+	//
 	// STATUS
 	//
 	public static TextView location;

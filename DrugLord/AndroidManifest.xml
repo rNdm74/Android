@@ -47,6 +47,39 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.dotdat.druglord.Places"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="com.thenewboston.adam.PLACES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dotdat.druglord.Info"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="com.thenewboston.adam.INFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dotdat.druglord.FlyAway"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="com.thenewboston.adam.FLYAWAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

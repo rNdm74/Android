@@ -35,10 +35,20 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int uparrow=0x7f020005;
     }
     public static final class id {
-        public static final int NAME=0x7f080033;
-        public static final int PRICE=0x7f080035;
-        public static final int QTY=0x7f080034;
-        public static final int ROW=0x7f080032;
+        public static final int Finances=0x7f080040;
+        public static final int History=0x7f08003d;
+        public static final int Hospital=0x7f080044;
+        public static final int NAME=0x7f08004b;
+        public static final int PRICE=0x7f08004d;
+        public static final int QTY=0x7f08004c;
+        public static final int ROW=0x7f08004a;
+        public static final int ShipmentStatus=0x7f08003b;
+        public static final int Shipping=0x7f080048;
+        public static final int Shopping=0x7f080042;
+        public static final int Vault=0x7f080046;
+        public static final int Vaults=0x7f080035;
+        public static final int WorldCities=0x7f080039;
+        public static final int WorldDrugPrices=0x7f080037;
         public static final int bAbout=0x7f080011;
         public static final int bBuy=0x7f080007;
         public static final int bBuyCancel=0x7f080030;
@@ -51,14 +61,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int bNewGame=0x7f080014;
         public static final int bPlaces=0x7f08000a;
         public static final int bSell=0x7f080008;
-        public static final int bSellCancel=0x7f08003b;
-        public static final int bSellConfirm=0x7f08003c;
+        public static final int bSellCancel=0x7f080053;
+        public static final int bSellConfirm=0x7f080054;
         public static final int bStayHere=0x7f08000d;
         public static final int cSound=0x7f080010;
         public static final int content=0x7f08001b;
         public static final int eBuyQuantity=0x7f08002f;
-        public static final int eSellQuantity=0x7f08003a;
+        public static final int eSellQuantity=0x7f080052;
         public static final int handle=0x7f08001c;
+        public static final int lFlyAway=0x7f080033;
         public static final int lInventory=0x7f080019;
         public static final int lMarket=0x7f080005;
         public static final int pbHealth=0x7f080020;
@@ -78,8 +89,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int tCurrentRank=0x7f080024;
         public static final int tDay=0x7f080021;
         public static final int tDebt=0x7f080029;
+        public static final int tFinancesLabel=0x7f080041;
+        public static final int tFlyAway=0x7f080032;
         public static final int tGame=0x7f08000f;
         public static final int tHealth=0x7f08001f;
+        public static final int tHistoryLabel=0x7f08003e;
+        public static final int tHospitalLabel=0x7f080045;
         public static final int tInformation=0x7f080000;
         public static final int tInventory=0x7f080015;
         public static final int tInventoryName=0x7f080016;
@@ -91,17 +106,29 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int tMarketPrice=0x7f080004;
         public static final int tMarketQty=0x7f080003;
         public static final int tRank=0x7f080023;
-        public static final int tSellMessage=0x7f080038;
-        public static final int tSellMessageTitle=0x7f080037;
-        public static final int tSellQuestion=0x7f080039;
-        public static final int tSellTitle=0x7f080036;
+        public static final int tSellMessage=0x7f080050;
+        public static final int tSellMessageTitle=0x7f08004f;
+        public static final int tSellQuestion=0x7f080051;
+        public static final int tSellTitle=0x7f08004e;
+        public static final int tShipmentStatusLabel=0x7f08003c;
+        public static final int tShippingLabel=0x7f080049;
+        public static final int tShoppingLabel=0x7f080043;
         public static final int tTomorrow=0x7f08000c;
+        public static final int tVaultLabel=0x7f080047;
+        public static final int tVaultsLabel=0x7f080036;
+        public static final int tWorldCitiesLabel=0x7f08003a;
+        public static final int tWorldDrugPricesLabel=0x7f080038;
+        public static final int tabhostinfo=0x7f080034;
+        public static final int tabhostplaces=0x7f08003f;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int buy=0x7f030001;
-        public static final int row=0x7f030002;
-        public static final int sell=0x7f030003;
+        public static final int flyaway=0x7f030002;
+        public static final int info=0x7f030003;
+        public static final int places=0x7f030004;
+        public static final int row=0x7f030005;
+        public static final int sell=0x7f030006;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
