@@ -8,12 +8,12 @@
         android:id="@+id/tSellTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40sp"
-        android:layout_marginLeft="40sp"
-        android:layout_marginBottom="15sp"        
+        android:layout_marginBottom="15sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="30sp"
         android:text="Places"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-    
+
     <TabHost
         android:id="@+id/tabhostplaces"
         android:layout_width="fill_parent"
@@ -37,17 +37,20 @@
 
                 <LinearLayout
                     android:id="@+id/Finances"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
                     android:orientation="vertical"
-                    android:padding="50sp" >
-
-                    <TextView
-                        android:id="@+id/tFinancesLabel"
-                        android:layout_width="wrap_content"
+                    android:padding="0sp" >
+                    
+                    <ViewStub
+                        android:id="@+id/stub_finances_import"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:text="Finances"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:layout_gravity="bottom"
+                        android:inflatedId="@+id/panel_finances_import"
+                        android:layout="@layout/finances" />
+
+                    
                 </LinearLayout>
 
                 <LinearLayout
@@ -55,7 +58,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:padding="50sp" >
+                    android:padding="30sp" >
 
                     <TextView
                         android:id="@+id/tShoppingLabel"
@@ -70,7 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:padding="50sp" >
+                    android:padding="30sp" >
 
                     <TextView
                         android:id="@+id/tHospitalLabel"
@@ -85,7 +88,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:padding="50sp" >
+                    android:padding="30sp" >
 
                     <TextView
                         android:id="@+id/tVaultLabel"
@@ -100,7 +103,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:padding="50sp" >
+                    android:padding="30sp" >
 
                     <TextView
                         android:id="@+id/tShippingLabel"

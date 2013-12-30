@@ -8,8 +8,8 @@
         android:id="@+id/tSellTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40sp"
-        android:layout_marginLeft="40sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="30sp"
         android:layout_marginBottom="15sp"        
         android:text="Info"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -40,7 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:padding="50sp" >
+                    android:padding="30sp" >
 
                     <TextView
                         android:id="@+id/tVaultsLabel"
@@ -55,7 +55,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:padding="50sp" >
+                    android:padding="30sp" >
 
                     <TextView
                         android:id="@+id/tWorldDrugPricesLabel"
@@ -70,7 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:padding="50sp" >
+                    android:padding="30sp" >
 
                     <TextView
                         android:id="@+id/tWorldCitiesLabel"
@@ -85,7 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:padding="50sp" >
+                    android:padding="30sp" >
 
                     <TextView
                         android:id="@+id/tShipmentStatusLabel"
@@ -100,7 +100,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:padding="50sp" >
+                    android:padding="30sp" >
 
                     <TextView
                         android:id="@+id/tHistoryLabel"

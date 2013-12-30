@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewStub;
 import android.widget.TabHost;
 
 public class Places extends Activity implements OnClickListener {
@@ -42,6 +43,24 @@ public class Places extends Activity implements OnClickListener {
 		tabs.addTab(spec);
 		
 		tabs.setCurrentTab(0);
+		
+		((ViewStub) findViewById(R.id.stub_finances_import)).setVisibility(View.VISIBLE);
+		
+		TabHost tabsFinances = (TabHost) findViewById(R.id.tabhostfinances); 
+		tabsFinances.setup();
+		
+		spec = tabs.newTabSpec("tag11"); 
+		spec.setContent(R.id.Bank); 
+		spec.setIndicator("Bank"); 
+		tabsFinances.addTab(spec);
+		spec = tabs.newTabSpec("tag12"); 
+		spec.setContent(R.id.Debt); 
+		spec.setIndicator("Debt"); 
+		tabsFinances.addTab(spec);
+		
+		tabsFinances.setCurrentTab(0);
+		
+		((ViewStub) findViewById(R.id.stub_bank_import)).setVisibility(View.VISIBLE);
 	}
 
 	@Override
