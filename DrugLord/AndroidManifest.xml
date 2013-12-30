@@ -28,7 +28,7 @@
         <activity
             android:name="com.dotdat.druglord.Buy"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"
+            android:theme="@android:style/Theme.DeviceDefault.Light.DialogWhenLarge.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
             <intent-filter>
                 <action android:name="com.thenewboston.adam.BUY" />
@@ -39,7 +39,7 @@
         <activity
             android:name="com.dotdat.druglord.Sell"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"
+            android:theme="@android:style/Theme.DeviceDefault.Light.DialogWhenLarge.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
             <intent-filter>
                 <action android:name="com.thenewboston.adam.SELL" />
@@ -48,9 +48,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.dotdat.druglord.Dump"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light.DialogWhenLarge.NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="com.thenewboston.adam.DUMP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.dotdat.druglord.Places"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"
+            android:theme="@android:style/Theme.DeviceDefault.Light.DialogWhenLarge.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
             <intent-filter>
                 <action android:name="com.thenewboston.adam.PLACES" />
@@ -61,7 +72,7 @@
         <activity
             android:name="com.dotdat.druglord.Info"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"
+            android:theme="@android:style/Theme.DeviceDefault.Light.DialogWhenLarge.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
             <intent-filter>
                 <action android:name="com.thenewboston.adam.INFO" />
@@ -72,7 +83,7 @@
         <activity
             android:name="com.dotdat.druglord.FlyAway"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"
+            android:theme="@android:style/Theme.DeviceDefault.Light.DialogWhenLarge.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
             <intent-filter>
                 <action android:name="com.thenewboston.adam.FLYAWAY" />

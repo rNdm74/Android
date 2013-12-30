@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical" >
 
+    <TextView
+        android:id="@+id/tSellTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginBottom="15sp"        
+        android:text="Places"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
     <TabHost
         android:id="@+id/tabhostplaces"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="fill_parent" >
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -16,18 +26,18 @@
 
             <TabWidget
                 android:id="@android:id/tabs"
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content" >
             </TabWidget>
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
 
                 <LinearLayout
                     android:id="@+id/Finances"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="50sp" >
@@ -42,7 +52,7 @@
 
                 <LinearLayout
                     android:id="@+id/Shopping"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="50sp" >
@@ -57,7 +67,7 @@
 
                 <LinearLayout
                     android:id="@+id/Hospital"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="50sp" >
@@ -72,7 +82,7 @@
 
                 <LinearLayout
                     android:id="@+id/Vault"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="50sp" >
@@ -87,7 +97,7 @@
 
                 <LinearLayout
                     android:id="@+id/Shipping"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="50sp" >

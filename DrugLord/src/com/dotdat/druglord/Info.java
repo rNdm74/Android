@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.LinearLayout.LayoutParams;
 import android.widget.TabHost;
 
 public class Info extends Activity implements OnClickListener{
@@ -45,6 +46,8 @@ public class Info extends Activity implements OnClickListener{
 		tabs.addTab(spec);
 		
 		tabs.setCurrentTab(0);
+		
+		//getWindow().setLayout (LayoutParams.WRAP_CONTENT /* width */ , LayoutParams.FILL_PARENT /* height */);
 	}
 
 	@Override

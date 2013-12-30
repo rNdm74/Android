@@ -3,20 +3,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="25sp" >
+    android:padding="40sp"
+    android:weightSum="2" >
 
-    <TextView
-        android:id="@+id/tFlyAway"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fly Away"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"
+        android:orientation="vertical" >
 
-    <ListView
-        android:id="@+id/lFlyAway"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:choiceMode="singleChoice" >
-    </ListView>
+        <TextView
+            android:id="@+id/tFlyAway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15sp"
+            android:text="Fly Away"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ListView
+            android:id="@+id/lFlyAway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15sp"
+            android:choiceMode="singleChoice" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bFlyAwayCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/bFlyAwayConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fly" />
+    </LinearLayout>
 
 </LinearLayout>

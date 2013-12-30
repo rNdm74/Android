@@ -1,51 +1,20 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0099cc"
     android:orientation="vertical"
-    android:weightSum="2"
     tools:context=".Main" >
 
     <LinearLayout
+        android:id="@+id/llMainGame"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="1.9"
-        android:background="#FFFFFF"
-        android:orientation="vertical"
-        android:padding="15sp" >
-
-        <TextView
-            android:id="@+id/tInformation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Information"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#252525" />
-
-        <ScrollView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" >
-
-            <TextView
-                android:id="@+id/tInformation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15sp"
-                android:layout_marginTop="15sp"
-                android:text="Here&apos;s the situation:\nAfter one failed job after another, you decide to embark on a different life: drug dealer! You scrape together your last $1000, but feel it really isn&apos;t enough to get started. The good news is that Buddles spots you an extra $1000. The bad news is that he is a loan shark and will soon want his money back. Time to get started!
-                "
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#252525" />
-        </ScrollView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="0.1"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="70sp"
         android:background="#AAAAAA"
         android:baselineAligned="false"
+        android:gravity="bottom"
         android:orientation="horizontal"
         android:weightSum="5" >
 
@@ -63,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15sp"
                 android:text="The Market"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#252525" />
 
             <LinearLayout
@@ -134,7 +103,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="15sp"
                     android:text="Action"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#252525" />
 
                 <Button
@@ -173,7 +142,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="15sp"
                     android:text="Tomorrow"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#252525" />
 
                 <Button
@@ -194,7 +163,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="15sp"
                     android:text="Game"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#252525" />
 
                 <CheckBox
@@ -252,7 +221,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="15sp"
                     android:text="Inventory"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#252525" />
 
                 <LinearLayout
@@ -305,15 +274,15 @@
             </LinearLayout>
 
             <SlidingDrawer
-                android:id="@+id/slidingDrawer1"
+                android:id="@+id/sdStatus"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="15sp"
-                android:content="@+id/content"
-                android:handle="@+id/handle" >
+                android:content="@+id/cStatus"
+                android:handle="@+id/hStatus" >
 
                 <TextView
-                    android:id="@+id/handle"
+                    android:id="@+id/hStatus"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:background="#FFFFFF"
@@ -321,10 +290,10 @@
                     android:padding="15sp"
                     android:text="Status"
                     android:textAlignment="gravity"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
 
                 <LinearLayout
-                    android:id="@+id/content"
+                    android:id="@+id/cStatus"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:background="#FFFFFF"
@@ -392,50 +361,50 @@
                                 android:padding="15sp"
                                 android:weightSum="2" >
 
-                                
                                 <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:layout_weight="1" >
-                                    
-                                <TextView
-                                    android:id="@+id/tDay"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1.3"
-                                    android:text="Day" />
-                                <TextView
-                                    android:id="@+id/tCurrentDay"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="0.7"
-                                    android:gravity="left"
-                                    android:text="0/30" />    
-                                </LinearLayout>
-                                
-                                <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:layout_marginLeft="15sp"
-                                android:layout_weight="1" >
-                                    
-                                <TextView
-                                    android:id="@+id/tRank"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="fill_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Rank" />
-                                <TextView
-                                    android:id="@+id/tCurrentRank"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:gravity="left"
-                                    android:text="Wannabe" />    
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tDay"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.3"
+                                        android:text="Day" />
+
+                                    <TextView
+                                        android:id="@+id/tCurrentDay"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.7"
+                                        android:gravity="left"
+                                        android:text="0/30" />
                                 </LinearLayout>
-                                
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15sp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tRank"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Rank" />
+
+                                    <TextView
+                                        android:id="@+id/tCurrentRank"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Wannabe" />
+                                </LinearLayout>
                             </LinearLayout>
 
                             <LinearLayout
@@ -451,6 +420,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="0.5"
                                     android:text="Cash" />
+
                                 <TextView
                                     android:id="@+id/tCurrentCash"
                                     android:layout_width="wrap_content"
@@ -474,6 +444,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="0.5"
                                     android:text="Bank" />
+
                                 <TextView
                                     android:id="@+id/tCurrentBank"
                                     android:layout_width="wrap_content"
@@ -497,14 +468,15 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="0.5"
                                     android:text="Debt" />
+
                                 <TextView
                                     android:id="@+id/tCurrentDebt"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1.5"
                                     android:gravity="left"
-                                    android:text="1,150" 
-                                    android:textColor="#FE2E2E"/>
+                                    android:text="1,150"
+                                    android:textColor="#FE2E2E" />
                             </LinearLayout>
                         </LinearLayout>
                     </ScrollView>
@@ -513,4 +485,65 @@
         </FrameLayout>
     </LinearLayout>
 
-</LinearLayout>
+    <SlidingDrawer
+        android:id="@+id/sdInformation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:content="@+id/cInformation"
+        android:gravity="top"
+        android:handle="@+id/hInformation"
+        android:rotation="180" >
+
+        <TextView
+            android:id="@+id/hInformation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="30sp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingTop="30sp"
+            android:rotation="180"
+            android:text="Information"
+            android:textAlignment="gravity"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:id="@+id/cInformation"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="15sp"
+            android:rotation="180" >
+
+            <TextView
+                android:id="@+id/tInformationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15sp"
+                android:text="Information"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#252525" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/tInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15sp"
+                    android:layout_marginTop="15sp"
+                    android:text="Here&apos;s the situation:\nAfter one failed job after another, you decide to embark on a different life: drug dealer! You scrape together your last $1000, but feel it really isn&apos;t enough to get started. The good news is that Buddles spots you an extra $1000. The bad news is that he is a loan shark and will soon want his money back. Time to get started!
+                "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#252525" />
+            </ScrollView>
+        </LinearLayout>
+    </SlidingDrawer>
+
+</FrameLayout>

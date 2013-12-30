@@ -12,9 +12,11 @@ import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
+import android.widget.SlidingDrawer;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,7 +35,7 @@ public class Main extends Activity implements OnClickListener {
 
 		// Displays activity on device
 		setContentView(R.layout.activity_main);
-
+		
 		// Links the two xml list views to variables in the constants class
 		Constants.marketView = (ListView) findViewById(R.id.lMarket);
 		Constants.inventoryView = (ListView) findViewById(R.id.lInventory);
@@ -54,6 +56,8 @@ public class Main extends Activity implements OnClickListener {
 		initializeBuyButton();
 
 		initializeSellButton();
+		
+		initializeDumpButton();
 		
 		initializePlacesButton();
 		
@@ -112,23 +116,17 @@ public class Main extends Activity implements OnClickListener {
 	private void initializePlacesButton() {
 		Button places = (Button) findViewById(R.id.bPlaces);
 
-		//sell.setText("<< Sell");
-
 		places.setOnClickListener(this);
 	}
 	
 	private void initializeFlyAwayButton() {
 		Button flyAway = (Button) findViewById(R.id.bFlyAway);
 
-		//sell.setText("<< Sell");
-
 		flyAway.setOnClickListener(this);
 	}
 	
 	private void initializeInfoButton() {
 		Button info = (Button) findViewById(R.id.bInfo);
-
-		//sell.setText("<< Sell");
 
 		info.setOnClickListener(this);
 	}
@@ -149,6 +147,12 @@ public class Main extends Activity implements OnClickListener {
 		buy.setOnClickListener(this);
 	}
 
+	private void initializeDumpButton() {
+		Button dump = (Button) findViewById(R.id.bDump);
+
+		dump.setOnClickListener(this);
+	}
+	
 	private void startActivity(String classAddress) {
 		try {
 			// Creates class from name from classes array
@@ -303,6 +307,16 @@ public class Main extends Activity implements OnClickListener {
 				startActivity("com.dotdat.druglord.Sell");
 			}
 			break;
+		case R.id.bDump:
+			if (Constants.selectInventoryItem == null) {
+				// Show Alert
+				Toast.makeText(getApplicationContext(),
+						"You must select something to sell", Toast.LENGTH_SHORT)
+						.show();
+			} else {
+				startActivity("com.dotdat.druglord.Dump");
+			}
+			break;	
 		case R.id.bPlaces:
 				startActivity("com.dotdat.druglord.Places");
 			break;
@@ -313,6 +327,11 @@ public class Main extends Activity implements OnClickListener {
 			startActivity("com.dotdat.druglord.FlyAway");
 		break;
 		case R.id.bStayHere:
+			// Show Alert
+			Toast.makeText(getApplicationContext(),
+					"A new day begins", Toast.LENGTH_SHORT)
+					.show();
+			
 			Constants.day.setText(++Constants.currentDay + "/30");
 			Constants.currentDebt += Constants.currentDebt * 0.5;					
 			moneyString = formatter.format(Constants.currentDebt);
