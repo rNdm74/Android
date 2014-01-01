@@ -312,7 +312,11 @@ public class Sprite {
 			jump();
 			break;
 		case SOUTH:
-			yPos = tileMap.getTileMapBounds().y - frames[state.ordinal()][currentFrame].bottom - 70;
+			//yPos = tileMap.getTileMapBounds().y - frames[state.ordinal()][currentFrame].bottom - 70;
+			row = (yPos + (frameHeight-10)) / 70; 
+			
+			yPos = ((row+1) * 70) - frameHeight;
+			
 			time++;
 			break;
 		case WEST:
