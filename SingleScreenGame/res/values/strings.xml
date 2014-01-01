@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SingleScreenGame</string>
+    
+    <string name="splash">SPLASH\nSCREEN</string>
+    <string name="menu">WELCOME</string>
+    <string name="play">PLAY</string>
+    <string name="options">OPTIONS</string>
+    <string name="exit">EXIT</string>
+    <string name="game">GAME</string>
+
+</resources>
