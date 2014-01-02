@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thenewboston.adam"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.thenewboston.adam.Splash"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.thenewboston.adam.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.Menu"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black" >
+            <intent-filter>
+                <action android:name="com.thenewboston.adam.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.TextPlay"
+            android:label="TextPlay" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.Check"
+            android:label="Check" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.Scroll"
+            android:label="Scroll" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.Email"
+            android:label="Email" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.Camera"
+            android:label="Camera"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.Send"
+            android:label="Send" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.Receive"
+            android:label="Receive" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.GFX"
+            android:label="Graphics" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.GFXSurface"
+            android:label="GraphicsSurface" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.SoundManager"
+            android:label="SoundEffects" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.Slider"
+            android:label="Slider" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.Tabs"
+            android:label="Tabs" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.SimpleBrowser"
+            android:label="Web" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.Flipper"
+            android:label="Flipper" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.SharedPrefs"
+            android:label="SharedPreferences" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.InternalData"
+            android:label="InternalData" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.ExternalStorage"
+            android:label="ExternalData" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.Sql"
+            android:label="Sql" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.SqlView"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.thenewboston.adam.SQLVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.Accelerate"
+            android:label="Accelerate" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.HTTPExample"
+            android:label="HTTPExample" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.ParseJSONFile"
+            android:label="ParseJSONFile" >
+        </activity>
+        
+        <activity
+            android:name="com.thenewboston.adam.ParseXMLFile"
+            android:label="ParseXMLFile"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!-- Preferences Items Below -->
+
+        <activity
+            android:name="com.thenewboston.adam.AboutUs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.thenewboston.adam.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenewboston.adam.Prefs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.thenewboston.adam.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

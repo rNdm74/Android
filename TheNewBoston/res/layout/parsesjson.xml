@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+
+        <TextView
+            android:id="@+id/tvWaitingJson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waiting" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <Button
+                android:id="@+id/bBackObject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/bNextObject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Next" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvJsonData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Json Data" />
+
+        <ImageView
+            android:id="@+id/ivSprite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/apple_iphone" />
+
+</LinearLayout>

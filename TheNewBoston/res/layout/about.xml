@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Install Windows 7/8 themes and icons in Ubuntu 13.10/13.04/12.10/12.04/Linux Mint 16/15/14/13 and other Ubuntu derivatives (GTK + Cinnamon) If you just moved from Windows or want to move from Windows to Linux and you like Windows interface, so here are themes + icons for your Linux desktop to make it like Windows. This pack has Windows 7 and 8 theme and icons, there can be miss…" />
+
+</LinearLayout>
